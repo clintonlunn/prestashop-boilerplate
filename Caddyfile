@@ -1,0 +1,12 @@
+# example of what your Caddyfile might look like to reverse proxy into your domain
+
+#PrestaShop demo
+presta.example.com {
+	reverse_proxy localhost:8002
+}
+
+#PrestaShop db
+presta-db.example.com {
+	reverse_proxy localhost:8083
+}
+
